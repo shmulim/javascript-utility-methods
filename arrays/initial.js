@@ -1,3 +1,6 @@
+// Returns everything but the last entry of the array.
+// Pass n to exclude the last n elements from the result.
+
 var array = [5, 4, 3, 2, 1];
 
 Array.prototype.initial = function(n) {
