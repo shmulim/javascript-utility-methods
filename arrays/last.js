@@ -1,3 +1,6 @@
+// Returns the last element of an array.
+// Passing n will return the last n elements of the array.
+
 var array = [5, 4, 3, 2, 1];
 
 Array.prototype.last = function(n){
