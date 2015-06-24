@@ -1,3 +1,6 @@
+// Returns the rest of the elements in an array.
+// Pass an index to return the values of the array from that index onward.
+
 var array = [5, 4, 3, 2, 1];
 
 Array.prototype.rest = function(i) {
