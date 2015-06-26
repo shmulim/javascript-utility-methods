@@ -3,13 +3,13 @@
 
 var array = [5, 4, 3, 2, 1];
 
-Array.prototype.last = function(n){
+Array.prototype._last = function(n){
   n = n || 1;
   return this.slice(-n);
 };
 
-array.last();
+array._last();
 // [1]
 
-array.last(3);
+array._last(3);
 // [3, 2, 1]
