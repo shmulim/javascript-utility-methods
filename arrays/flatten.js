@@ -10,7 +10,7 @@ Array.prototype._flatten = function(shallow) {
     }, []);
   } else {
     return this.reduce(function(acc, val) {
-      return acc.concat(val.constructor === Array ? val.flatten() : val);
+      return acc.concat(val.constructor === Array ? val._flatten() : val);
     }, []);
   }
 };
