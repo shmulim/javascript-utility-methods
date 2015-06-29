@@ -9,8 +9,8 @@ Array.prototype._flatten = function(shallow) {
       return a.concat(b);
     }, []);
   } else {
-    return this.reduce(function(acc, val) {
-      return acc.concat(val.constructor === Array ? val._flatten() : val);
+    return this.reduce(function(a, b) {
+      return a.concat(b.constructor === Array ? b._flatten() : b);
     }, []);
   }
 };
