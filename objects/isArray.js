@@ -1,7 +1,7 @@
 // Returns true if object is an Array.
 
-var obj = {};
 var arr = [];
+var obj = {};
 
 Object.prototype._isArray = function() {
   if (this.constructor === Array){
@@ -11,8 +11,17 @@ Object.prototype._isArray = function() {
   }
 };
 
+arr._isArray();
+// true
+
 obj._isArray();
 // false
 
-arr._isArray();
-// true
+function argsFunc(){
+  return arguments._isArray(); // false (Arguments)
+}
+
+window.onload = function(){
+  var div = document.getElementsByTagName('div');
+  console.log(div._isArray()); // false (HTMLCollection)
+};
