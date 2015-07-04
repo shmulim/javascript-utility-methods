@@ -14,7 +14,7 @@ Object.prototype._map = function (callback) {
   return arr;
 };
 
-obj._map(function(val, key, arr){
+obj._map(function(val, key, list){
   return val + ':' + key;
 });
 // ["1:one", "2:two", "3:three"]
