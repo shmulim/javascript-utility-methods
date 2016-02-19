@@ -8,7 +8,7 @@ Object.prototype._map = function (callback) {
   var arr = [];
   for (var i in this){
     if (this.hasOwnProperty(i)){
-          arr.push(callback(this[i], i, this)); // validate callback
+      arr.push(callback(this[i], i, this)); // validate callback
     }
   }
   return arr;
